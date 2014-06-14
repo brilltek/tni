@@ -94,3 +94,18 @@ ul#menu1 li:HOVER .submenu li{
 	border-right: 8px solid transparent;	
 	border-top: 8px solid #009999;
 }
+
+#pagedisp{
+	margin-top: 150px;
+}
+
+#navdiv{
+	position: relative;
+	z-index: 10;
+}
+
+#pagedisp{
+	margin-top: 150px;
+	position: absolute; 
+	z-index: 1;
+}

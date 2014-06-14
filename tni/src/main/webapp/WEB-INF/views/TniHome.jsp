@@ -32,7 +32,7 @@
 			</div>
 
 			<br />
-			<div>
+			<div id="navdiv">
 			<ul id="menu1">
 				<li><a href="#" onclick="return tagresolving('${propertyConfigurer['one']}');">Home</a></li>
 				<li><a href="#" onclick="return tagresolving('${propertyConfigurer['two']}');">Admission</a>
@@ -42,14 +42,14 @@
 						<li><a href="#">UG</a></li>
 						<li><a href="#">PG</a></li>
 					</ul></li>
-				<li><a href="#">e-Learning</a></li>
+				<li><a href="#" onclick="return tagresolving('${propertyConfigurer['three']}');">e-Learning</a></li>
 				<li><a href="#">Products</a></li>
 				<li><a href="#">Expertise</a></li>
 				<li><a href="#">Service</a></li>
 			</ul>
 			</div>
 			</div>			
-			
+			<br/>
 			<div id="pagedisp">
 				
 				
