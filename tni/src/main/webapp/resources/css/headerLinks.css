@@ -1,4 +1,9 @@
 @CHARSET "ISO-8859-1";
+
+.astyle{
+	cursor: pointer;
+}
+
 a:VISITED {
 	color:black
 }
@@ -44,8 +49,8 @@ a:HOVER {
 	text-decoration: none;
 	display: block;
 	width: 90px;
-	height: 30px;
-	line-height: 25px;
+	height: 15px;
+	line-height: 15px;
 	color: white;
 	font-weight: bold;
 	background-color: #009999;
@@ -61,7 +66,8 @@ a:HOVER {
 }
 
 #menu1 li:HOVER>a{
-	text-decoration: underline;
+	text-decoration: none;
+	background-color: #339999;
 }
 
 .submenu li{
@@ -70,6 +76,21 @@ a:HOVER {
 
 #menu1 li li a{
 	background-color: #339999;
+	text-decoration: none;
+	display: block;
+	width: 90px;
+	height: 15px;
+	line-height: 23px;
+	color: white;
+	font-weight: bold;
+	border-bottom:1px solid black;
+	border-top:1px solid black;
+	border-right:1px solid black;
+	border-radius: 5px;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
 }
 
 ul#menu1 li:HOVER .submenu li{

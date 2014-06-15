@@ -19,7 +19,7 @@
 		<div style="background: white; width: 1000px; margin-top: 10px; margin-left: 160px; margin-right: 50px; height: 630px">
 			<div>
 			<div id="content"><%--  --%>
-				<a href="http://www.google.com">Quality Policy</a>&nbsp;| <a
+				<a href="http://www.google.com">Quality Policy</a>&nbsp;| <a class="astyle"
 					  onclick="return tagresolving('${propertyConfigurer['link2']}');">About Us</a>&nbsp;| <a
 					href="http://www.google.com">FAQ's</a>&nbsp;| <a
 					href="http://www.google.com">Forum</a>&nbsp;| <a
