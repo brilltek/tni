@@ -1,51 +1,75 @@
 @CHARSET "ISO-8859-1";
 
-.astyle{
-	cursor: pointer;
+body {
+		background-color: silver;
 }
 
+/* This is to style the color of anchor tag content which is already visited link */
 a:VISITED {
-	color:black
+	color: black
 }
 
+/* This is to remove the underline for anchor tag content */
 a:LINK {
 	text-decoration: none
 }
 
+/* This is to make the underline for anchor tag content when cursor is placed on the Link */
 a:HOVER {
 	text-decoration: underline
 }
 
- #content{
-	height:100px;
-	width:400px;
-	float:right;
+#content {
+	height: 100px;
+	width: 400px;
+	float: right;
 }
 
-#img{
-	float:left;
+.img {
+	float: left;
 	width: 600px;
 	height: 100px;
 }
 
-*{
-	margin:0;
-	padding:0;
+/*this is to set the border radius for the image at top left side*/
+.img a>img {
+	border: 1px solid white;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 5px;
 }
 
- ul#menu1,.submenu{
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+}
+
+/* this is to set the middle body as white color and its width and height */
+#toplinks {
+	background: white;
+	width: 1000px;
+	margin-top: 10px;
+	margin-left: 160px;
+	margin-right: 50px;
+	height: 630px;
+	border-radius: 10px;
+}
+
+ul.menu1,.submenu {
 	list-style: none;
 }
 
-#menu1 li{
+.menu1 li {
 	float: left;
-	margin-right:65px;
+	margin-right: 65px;
 	position: relative;
 	width: 90px;
 	text-align: center;
 }
 
-#menu1 li a{
+.menu1 li a {
 	text-decoration: none;
 	display: block;
 	width: 90px;
@@ -55,9 +79,9 @@ a:HOVER {
 	font-weight: bold;
 	background-color: #009999;
 	/* border: 1px solid black; */
-	border-bottom:1px solid black;
-	border-top:1px solid black;
-	border-right:1px solid black;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
 	border-radius: 5px;
 	padding-left: 2em;
 	padding-right: 2em;
@@ -65,16 +89,23 @@ a:HOVER {
 	padding-bottom: 1em;
 }
 
-#menu1 li:HOVER>a{
+/* This is to removing the underline of the hyperlinks when placing the cursor on the menu's and changing the background color*/
+.menu1 li:HOVER>a {
 	text-decoration: none;
 	background-color: #339999;
 }
 
-.submenu li{
+/* This is to making unvisible of submenu's defautly */
+.submenu li {
 	display: none;
 }
 
-#menu1 li li a{
+/* This is to change the background color of the submenu upon placing cursor on it */
+.submenu li:HOVER>a{
+	background-color: #009999;
+}
+
+.menu1 li li a {
 	background-color: #339999;
 	text-decoration: none;
 	display: block;
@@ -83,9 +114,9 @@ a:HOVER {
 	line-height: 23px;
 	color: white;
 	font-weight: bold;
-	border-bottom:1px solid black;
-	border-top:1px solid black;
-	border-right:1px solid black;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
 	border-radius: 5px;
 	padding-left: 2em;
 	padding-right: 2em;
@@ -93,40 +124,44 @@ a:HOVER {
 	padding-bottom: 1em;
 }
 
-ul#menu1 li:HOVER .submenu li{
+/* This is to display submenu's in block when placing the cursor upon the main menu's*/
+ul.menu1 li:HOVER .submenu li {
 	display: block;
 }
 
-#menu1 li:HOVER .submenu .vertical-rectangle {
-	margin-left:76px;
+.menu1 li:HOVER .submenu .vertical-rectangle {
+	margin-left: 76px;
 	margin-top: -4px;
 	display: table;
-    width: 5px;
-    height: 5px;
-    background: #009999;
+	width: 5px;
+	height: 5px;
+	background: #009999;
 }
 
-
-#menu1 li:HOVER .submenu .arrow-down {
-	margin-left:70px;
-	width: 0; 
-	height: 0; 
+.menu1 li:HOVER .submenu .arrow-down {
+	margin-left: 70px;
+	width: 0;
+	height: 0;
 	border-left: 8px solid transparent;
-	border-right: 8px solid transparent;	
+	border-right: 8px solid transparent;
 	border-top: 8px solid #009999;
 }
 
-#pagedisp{
+#pagedisp {
 	margin-top: 150px;
 }
 
-#navdiv{
+/*start with the z-index
+	This is to show the drop down menu upon the static text in the context page */
+.navdiv {
 	position: relative;
 	z-index: 10;
 }
 
-#pagedisp{
+#pagedisp {
 	margin-top: 150px;
-	position: absolute; 
+	position: absolute;
 	z-index: 1;
 }
+
+/* End of the z-index usage */
