@@ -1,5 +1,4 @@
 @CHARSET "ISO-8859-1";
-
 body {
 		background-color: silver;
 }
@@ -17,6 +16,10 @@ a:LINK {
 /* This is to make the underline for anchor tag content when cursor is placed on the Link */
 a:HOVER {
 	text-decoration: underline
+}
+
+.astyle:HOVER{
+	cursor: pointer;
 }
 
 #content {
@@ -158,10 +161,12 @@ ul.menu1 li:HOVER .submenu li {
 	z-index: 10;
 }
 
-#pagedisp {
+#pagedisp{
 	margin-top: 150px;
 	position: absolute;
 	z-index: 1;
+	text-indent: 50px;
+	width: 1000px;
 }
 
 /* End of the z-index usage */

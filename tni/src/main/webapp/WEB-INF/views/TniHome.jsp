@@ -9,7 +9,7 @@
 <script type="text/javascript"
 	src="./resources/javascript/tagResolve.js"></script>
 <link href="./resources/css/headerLinks.css" rel="stylesheet"
-	type="text/stylesheet" />
+	type="text/css" />
 
 
 <title>Welcome to e-Learning</title>
@@ -20,7 +20,7 @@
 			<div>
 				<div id="content">
 					<a href="#">Quality Policy</a>&nbsp;| 
-					<a onclick="return tagresolving('${propertyConfigurer['link2']}');">About Us</a>&nbsp;| 
+					<a onclick="return tagresolving('${propertyConfigurer['link2']}');" class="astyle">About Us</a>&nbsp;| 
 					<a href="#">FAQ's</a>&nbsp;| 
 					<a href="#">Forum</a>&nbsp;|
 					<a href="#">Contact Us</a>
@@ -51,10 +51,7 @@
 			</div>
 			<br />
 			<div id="pagedisp"></div>
-
 		</div>
-
 	</div>
-
 </body>
 </html>
